@@ -13,7 +13,7 @@ jobs:
         with:
           payload: |
             {
-              "issue_url": "${{ github.event.issue.url }}"
+              "issue_url": "${{ github.event.issue.html_url }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_ISSUE }}
